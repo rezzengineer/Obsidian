@@ -20,11 +20,11 @@ sudo adduser yourusername sudo usermod -aG sudo yourusername
 ```shell
 sudo nano /etc/ssh/sshd_config
 ```
-	Temukan dan perbarui baris berikut
+Temukan dan perbarui baris berikut
 ```bash
 PermitRootLogin no PasswordAuthentication no
 ```
-	Mulai Ulang SSH agar perubahan berlaku:
+Mulai Ulang SSH agar perubahan berlaku:
 ```bash
 sudo systemctl restart sshd
 ```
