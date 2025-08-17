@@ -42,3 +42,8 @@ sudo a2ensite kasir.conf
 systemctl reload apache2
 systemctl restart apache2
 ```
+
+LANJUTKAN PERINTAH INI JIKA KONFIGURASI MIKROTIK SUDAH DILAKUKAN DAN SUDAH MENG INSTALL PRESTASHOP
+```
+rm -rf /var/www/html/kasir/install
+```
