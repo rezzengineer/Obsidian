@@ -1,7 +1,7 @@
 ```
 su -
 #Masukkan repository
-nano /etc/apt/source.list/ 
+nano /etc/apt/sources.list/ 
 apt update
 apt install unzip wget curl sudo -y
 apt install apache2
