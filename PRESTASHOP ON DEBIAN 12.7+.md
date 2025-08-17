@@ -1,10 +1,12 @@
 ```
 su -
+#Masukkan repository
+nano /etc/apt/source.list/ 
 apt update
 apt install unzip wget curl sudo -y
 apt install apache2
 apt install mariadb-server
-apt install php-cli php-gd php-mbstring php-xml php-xmlrpc php-curl php-zip php-intl phpmyadmin -y
+apt install php-cli php-gd php-mbstring php-xml php-xmlrpc php-curl php-zip php-intl phpmyadmin libapache2-mod-php -y
 sudo a2enmod rewrite
 mysql_secure_installation
 sudo mariadb
@@ -23,7 +25,7 @@ cd /var/www/html/kasir/
 wget https://github.com/PrestaShop/PrestaShop/releases/download/8.2.2/prestashop_8.2.2.zip
 unzip prestashop(pencet tab aja)
 unzip prestashop.zip
-chown -R www:data:www-data /var/www/html/kasir/
+chown -R www-data:www-data /var/www/html/kasir/
 ```
 
 ```
@@ -32,8 +34,7 @@ cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/ka
 nano kasir.conf
 ```
 Silahkan edit saja file kasir .conf dengan menambahkan
-	`ServerName 192.168.x.x
-	
+	ServerName 192.168.x.x
 	DocumentRoot /var/www/html/kasir
 	
 ```
