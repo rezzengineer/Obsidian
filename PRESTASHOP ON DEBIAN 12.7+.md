@@ -38,12 +38,12 @@ Silahkan edit saja file kasir .conf dengan menambahkan
 	ServerName 192.168.x.x
 	
 ```
-sudo a2ensite kasir.conf
+sudo a2ensite 000-default.conf
 systemctl reload apache2
 systemctl restart apache2
 ```
 
 LANJUTKAN PERINTAH INI JIKA KONFIGURASI MIKROTIK SUDAH DILAKUKAN DAN SUDAH MENG INSTALL PRESTASHOP
 ```
-rm -rf /var/www/html/kasir/install
+rm -rf /var/www/html/install
 ```
