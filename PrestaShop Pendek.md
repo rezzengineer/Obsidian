@@ -1,7 +1,7 @@
 ```
 nano /etc/apt/sources.list
 apt update
-apt install apache2 php libapache2-mod-php php-mysql php-intl php-zip mariadb-server phpmyadmin -y
+apt install apache2 php-curl php-mbstring php-xml libapache2-mod-php php-mysql php-intl php-zip mariadb-server phpmyadmin -y
 mysql_secure _installation
 -
 N,Y (atur pw jadi 1) Y, N Y, Y
